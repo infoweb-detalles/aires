@@ -322,3 +322,4 @@ function enmascararCorreo(email) {
     return user.substring(0, 2) + "*******@" + "*****." + "com";
 
 }
+
