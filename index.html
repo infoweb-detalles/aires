@@ -1,1 +1,268 @@
-a
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análisis experto sobre el confort térmico en vuelos comerciales y soluciones de aviación.">
+    <title>Confort en Altitud | Gestión Térmica en Vuelos</title>
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        header {
+            background: #fff;
+            padding: 20px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+            color: #0a1e3c; /* Azul oscuro corporativo */
+            text-transform: uppercase;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0a1e3c 0%, #162f56 100%);
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            max-width: 800px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* CONTENT SECTION (The Problem) */
+        .content {
+            padding: 60px 5%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            margin-top: -30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        .content h2 {
+            color: #0a1e3c;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .content p {
+            margin-bottom: 20px;
+            color: #555;
+            text-align: justify;
+        }
+        .highlight-box {
+            background-color: #f4f7fa;
+            border-left: 4px solid #0a1e3c;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* THE CALL TO ACTION BUTTON */
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37 0%, #c5a028 100%); /* Dorado profesional */
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efecto sutil de brillo/atención */
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.5s;
+        }
+        
+        .cta-button:hover::after {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+
+        /* FOOTER (Essential for Google Ads) */
+        footer {
+            margin-top: auto;
+            background: #111;
+            color: #888;
+            padding: 40px 5%;
+            font-size: 0.8rem;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.7rem;
+            line-height: 1.4;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .content { margin-top: 0; box-shadow: none; border-radius: 0; }
+            .cta-button { width: 100%; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AeroComfort Dynamics</div>
+    </header>
+
+    <section class="hero">
+        <h1>Termodinámica en Cabina: El Desafío del Frío en Altitud</h1>
+        <p>Un análisis técnico sobre por qué las aerolíneas mantienen temperaturas bajas y cómo optimizar su experiencia de vuelo.</p>
+    </section>
+
+    <section class="content">
+        <h2>La Ciencia detrás de la Temperatura en Vuelo</h2>
+        <p>
+            Es una queja frecuente entre los viajeros frecuentes: la temperatura excesivamente baja dentro de las cabinas de los aviones modernos. Sin embargo, esto no es un descuido de la tripulación, sino una medida calculada relacionada con la presurización y la fisiología humana.
+        </p>
+        <p>
+            Estudios aeronáuticos sugieren que las temperaturas más bajas ayudan a contrarrestar la hipoxia (bajos niveles de oxígeno) que puede provocar desmayos. Mantener la cabina fresca es una medida de seguridad, pero a menudo resulta en una incomodidad térmica significativa para el pasajero.
+        </p>
+
+        <div class="highlight-box">
+            "El control del entorno personal durante un vuelo de larga distancia no es un lujo, es una necesidad para asegurar el descanso y la productividad al aterrizar."
+        </div>
+
+        <p>
+            Nuestra investigación ha culminado en una solución diseñada para viajeros que exigen estándares superiores. Hemos desarrollado una metodología para neutralizar los efectos del aire acondicionado agresivo sin comprometer la movilidad.
+        </p>
+
+        <div class="cta-container">
+            <button id="accessBtn" class="cta-button">
+                Ver La Solución
+            </button>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">Acceso exclusivo para visitantes cualificados.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos y Condiciones</a> | 
+            <a href="#">Contacto</a> | 
+            <a href="#">Sobre Nosotros</a>
+        </div>
+        <div class="disclaimer">
+            <p>Este sitio no está afiliado a ninguna aerolínea específica. La información presentada se basa en prácticas generales de la industria aeronáutica.</p>
+            <p>&copy; 2024 AeroComfort Dynamics. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('accessBtn');
+
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Obtenemos los parámetros de la URL actual
+                const urlParams = new URLSearchParams(window.location.search);
+
+                // LÓGICA DE VALIDACIÓN DE ANUNCIO
+                // Verificamos si existe 'gclid' (Google Click ID) O un parámetro personalizado 'source=ads'
+                // Esto asegura que solo el tráfico pagado sea redirigido.
+                const isAdTraffic = urlParams.has('gclid') || urlParams.get('source') === 'ads';
+
+                if (isAdTraffic) {
+                    // Si viene del anuncio, redirige al index
+                    window.location.href = 'index.html';
+                } else {
+                    // Si es tráfico orgánico o directo (no permitido), puedes:
+                    // 1. No hacer nada.
+                    // 2. Mostrar un mensaje sutil.
+                    // 3. Recargar la página.
+                    
+                    // Opción elegida: Feedback visual discreto de "No disponible"
+                    btn.style.background = '#ccc';
+                    btn.innerText = 'Oferta No Disponible';
+                    btn.style.boxShadow = 'none';
+                    btn.style.cursor = 'not-allowed';
+                    
+                    console.log("Acceso denegado: No se detectaron parámetros de anuncio.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
